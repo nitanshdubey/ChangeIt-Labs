@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Hero from './components/Hero'
-import TrustedBy from './components/TrustedBy'
+import Problem from './components/Problem'
+import Solution from './components/Solution'
+import Packages from './components/Packages'
 import WhyChooseUs from './components/WhyChooseUs'
-import Services from './components/Services'
+import Portfolio from './components/Portfolio'
 import Process from './components/Process'
-import FeaturedProjects from './components/FeaturedProjects'
+import About from './components/About'
 import Founder from './components/Founder'
-import Testimonials from './components/Testimonials'
-import FAQ from './components/FAQ'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
@@ -45,14 +45,14 @@ function App() {
       className="w-full bg-dark"
     >
       <Hero />
-      <TrustedBy />
+      <Problem />
+      <Solution />
+      <Packages />
       <WhyChooseUs />
-      <Services />
+      <Portfolio />
       <Process />
-      <FeaturedProjects />
+      <About />
       <Founder />
-      <Testimonials />
-      <FAQ />
       <ContactSection />
       <Footer />
     </motion.div>

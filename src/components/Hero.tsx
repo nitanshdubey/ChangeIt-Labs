@@ -48,8 +48,8 @@ const Hero = () => {
           variants={itemVariants}
           className="text-5xl md:text-7xl font-bold leading-tight mb-6 font-space"
         >
-          Transform Your Brand<br />
-          <span className="gradient-text">Online Presence</span>
+          Websites That Make Your<br />
+          <span className="gradient-text">Business Impossible To Ignore</span>
         </motion.h1>
 
         {/* Subheading */}
@@ -57,8 +57,8 @@ const Hero = () => {
           variants={itemVariants}
           className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-inter"
         >
-          Premium web design, strategic branding, and digital transformation for ambitious businesses. 
-          Built by Nitansh Dubey. Trusted by 50+ businesses across India.
+           
+          We transform gyms, cafés, and local businesses into premium digital brands with modern websites designed to build trust, attract customers, and create lasting impressions.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -67,7 +67,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
         >
           <a
-            href="https://wa.me/919876543210?text=Hi%20ChangeIt%20Labs,%20I%20want%20to%20book%20a%20free%20consultation"
+            href="https://wa.me/916266334438"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue hover:bg-blue/90 text-white font-semibold rounded-lg smooth-transition shadow-lg hover:shadow-2xl"
@@ -75,19 +75,14 @@ const Hero = () => {
             <MessageCircle size={20} />
             Chat on WhatsApp
           </a>
+          
           <a
-            href="#contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-blue/30 hover:border-blue text-white font-semibold rounded-lg smooth-transition hover:bg-blue/5"
-          >
-            <Calendar size={20} />
-            Book a Free Call
-          </a>
-          <button
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-purple/30 hover:border-purple text-white font-semibold rounded-lg smooth-transition hover:bg-purple/5"
-          >
-            <Briefcase size={20} />
-            View Our Work
-          </button>
+  href="#portfolio"
+  className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-purple/30 hover:border-purple text-white font-semibold rounded-lg smooth-transition hover:bg-purple/5"
+>
+  <Briefcase size={20} />
+  View Our Work
+</a>
         </motion.div>
 
         {/* Hero Image Placeholder */}
@@ -96,34 +91,16 @@ const Hero = () => {
           className="relative mt-16"
         >
           <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden glass-effect">
-            <div className="w-full h-full bg-gradient-to-br from-blue/10 to-purple/10 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">✨</div>
-                <p className="text-gray-400">Premium Portfolio Preview</p>
-              </div>
-            </div>
-          </div>
+  <img 
+    src="https://github.com/nitanshdubey/ChangeIt-Labs/blob/main/hero-visual.jpg?raw=true" 
+    alt="ChangeIt Labs"
+    className="w-full h-full object-cover"
+  />
+</div>
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue/20 to-purple/20 opacity-50 blur-2xl -z-10"></div>
         </motion.div>
 
-        {/* Stats */}
-        <motion.div
-          variants={itemVariants}
-          className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
-        >
-          <div className="text-center">
-            <p className="text-3xl md:text-4xl font-bold gradient-text mb-2">50+</p>
-            <p className="text-gray-400 text-sm">Happy Clients</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl md:text-4xl font-bold gradient-text mb-2">200+</p>
-            <p className="text-gray-400 text-sm">Projects Delivered</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl md:text-4xl font-bold gradient-text mb-2">5★</p>
-            <p className="text-gray-400 text-sm">Average Rating</p>
-          </div>
-        </motion.div>
+        
       </motion.div>
     </section>
   )

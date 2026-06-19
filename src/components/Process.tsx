@@ -75,7 +75,7 @@ const Process = () => {
           className="text-center mb-16"
         >
           <p className="text-sm md:text-base text-blue font-semibold mb-4 uppercase tracking-wide">Our Process</p>
-          <h2 className="text-3xl md:text-5xl font-bold font-space mb-4">How We Work</h2>
+          <h2 className="text-3xl md:text-5xl font-bold font-space mb-4">A Clear Path From Idea To Launch</h2>
           <p className="text-gray-400 text-lg">A proven process that delivers results</p>
         </motion.div>
 
@@ -126,7 +126,7 @@ const Process = () => {
           viewport={{ once: true }}
           className="mt-16 glass-effect p-8 rounded-xl border border-blue/20 text-center"
         >
-          <p className="text-lg text-gray-300 mb-4">📅 <span className="font-bold">Typical Timeline:</span> 4-8 weeks depending on project scope</p>
+          <p className="text-lg text-gray-300 mb-4">📅 <span className="font-bold">Typical Timeline:</span> 4-6 weeks depending on project scope</p>
           <p className="text-gray-400">Regular check-ins and updates throughout the entire process</p>
         </motion.div>
       </div>
