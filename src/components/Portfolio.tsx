@@ -4,10 +4,13 @@ import { ArrowUpRight } from 'lucide-react'
 const projects = [
   {
     title: 'IronForge Fitness',
-    badge: 'Concept Project',
+    badge: 'Live Project',
     color: 'from-orange-500 to-red-500',
     description:
       'A luxury gym website focused on energy, motivation, and membership conversion.',
+    image:
+      'https://github.com/nitanshdubey/IronForge-Gym/blob/main/Iron%20pic.png?raw=true',
+    link: 'https://iron-forge-gym-nitansh.vercel.app/',
   },
   {
     title: 'Velvet Brew Café',
@@ -80,22 +83,35 @@ const Portfolio = () => {
                         <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
                         <span className="w-3 h-3 rounded-full bg-green-400"></span>
                       </div>
-                      <div className="p-6">
-                        <div className={`h-10 w-2/3 rounded-lg bg-gradient-to-r ${project.color}`}></div>
-                        <div className="grid grid-cols-3 gap-3 mt-6">
-                          <div className="col-span-2 h-44 rounded-xl bg-white/5"></div>
-                          <div className="space-y-3">
-                            <div className="h-12 rounded-lg bg-white/5"></div>
-                            <div className="h-12 rounded-lg bg-white/5"></div>
-                            <div className="h-12 rounded-lg bg-white/5"></div>
-                          </div>
-                        </div>
-                        <div className="grid grid-cols-3 gap-3 mt-4">
-                          <div className="h-16 rounded-lg bg-white/5"></div>
-                          <div className="h-16 rounded-lg bg-white/5"></div>
-                          <div className="h-16 rounded-lg bg-white/5"></div>
-                        </div>
-                      </div>
+                      <div className="p-4">
+  {project.image ? (
+    <img
+      src={project.image}
+      alt={project.title}
+      className="w-full rounded-xl border border-white/10 object-cover"
+    />
+  ) : (
+    <>
+      <div className={`h-10 w-2/3 rounded-lg bg-gradient-to-r ${project.color}`}></div>
+
+      <div className="grid grid-cols-3 gap-3 mt-6">
+        <div className="col-span-2 h-44 rounded-xl bg-white/5"></div>
+
+        <div className="space-y-3">
+          <div className="h-12 rounded-lg bg-white/5"></div>
+          <div className="h-12 rounded-lg bg-white/5"></div>
+          <div className="h-12 rounded-lg bg-white/5"></div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-3 mt-4">
+        <div className="h-16 rounded-lg bg-white/5"></div>
+        <div className="h-16 rounded-lg bg-white/5"></div>
+        <div className="h-16 rounded-lg bg-white/5"></div>
+      </div>
+    </>
+  )}
+</div>
                     </div>
                   </div>
                   <div className="mx-10 h-3 bg-zinc-700 rounded-b-full"></div>
@@ -116,10 +132,15 @@ const Portfolio = () => {
                   ))}
                 </div>
 
-                <button className="bg-blue hover:bg-blue/90 px-7 py-4 rounded-xl font-semibold inline-flex items-center gap-3 smooth-transition">
-                  Explore Concept
-                  <ArrowUpRight size={20}/>
-                </button>
+                <a
+  href={project.link}
+  target={project.link !== '#' ? '_blank' : '_self'}
+  rel={project.link !== '#' ? 'noopener noreferrer' : ''}
+  className="inline-flex items-center gap-3 bg-blue hover:bg-blue/90 px-7 py-4 rounded-xl font-semibold smooth-transition"
+>
+  {project.link !== '#' ? 'Visit Website' : 'Explore Concept'}
+  <ArrowUpRight size={20} />
+</a>
               </div>
             </motion.div>
           ))}
