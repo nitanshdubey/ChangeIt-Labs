@@ -162,17 +162,15 @@ const Packages = () => {
 
                 {/* CTA Button */}
                 <a
-                  href={pkg.isHighlighted ? 'https://wa.me/919876543210?text=Hi%20ChangeIt%20Labs,%20I%20want%20to%20discuss%20the%20Growth%20Website%20package' : '#contact'}
-                  target={pkg.isHighlighted ? '_blank' : '_self'}
-                  rel={pkg.isHighlighted ? 'noopener noreferrer' : ''}
-                  className={`w-full py-4 font-semibold rounded-lg smooth-transition text-center ${
-                    pkg.isHighlighted
-                      ? 'bg-blue hover:bg-blue/90 text-white'
-                      : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
-                  }`}
-                >
-                  {pkg.cta}
-                </a>
+  href="#contact"
+  className={`w-full py-4 font-semibold rounded-lg smooth-transition text-center ${
+    pkg.isHighlighted
+      ? 'bg-blue hover:bg-blue/90 text-white'
+      : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+  }`}
+>
+  {pkg.cta}
+</a>
               </div>
             </motion.div>
           ))}

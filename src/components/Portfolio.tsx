@@ -14,10 +14,13 @@ const projects = [
   },
   {
     title: 'Velvet Brew Café',
-    badge: 'Concept Project',
+    badge: 'Live Project',
     color: 'from-amber-500 to-orange-500',
     description:
-      'A premium café experience emphasizing atmosphere, storytelling, and brand identity.',
+      'A premium café website designed to create a luxury coffee experience through elegant storytelling, immersive visuals, and modern UI.',
+    image:
+      'https://github.com/nitanshdubey/Velvet-Cafe/blob/main/nathan-dumlao-6VhPY27jdps-unsplash.jpg?raw=true',
+    link: 'https://velvet-cafe-gamma.vercel.app/',
   },
   {
     title: 'Elevate Personal Brand',
