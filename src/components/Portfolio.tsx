@@ -20,7 +20,7 @@ const projects = [
       'A premium café website designed to create a luxury coffee experience through elegant storytelling, immersive visuals, and modern UI.',
     image:
       'https://github.com/nitanshdubey/Velvet-Cafe/blob/main/nathan-dumlao-6VhPY27jdps-unsplash.jpg?raw=true',
-    link: 'https://velvet-cafe-gamma.vercel.app/',
+    link: 'https://velvetcafee.pages.dev/',
   },
   {
     title: 'Elevate Personal Brand',
