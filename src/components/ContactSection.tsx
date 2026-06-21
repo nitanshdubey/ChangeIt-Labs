@@ -77,7 +77,7 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            href="mailto:nitansh@changeitlabs.com"
+            href="mailto:nitanshdubey7@gmail.com"
             className="group glass-effect p-8 rounded-xl border border-white/10 smooth-transition hover:border-purple/30 hover:shadow-glow text-center"
           >
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-purple/10 mb-4 group-hover:bg-purple/20 smooth-transition">
