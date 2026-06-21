@@ -10,7 +10,7 @@ const projects = [
       'A luxury gym website focused on energy, motivation, and membership conversion.',
     image:
       'https://github.com/nitanshdubey/IronForge-Gym/blob/main/Iron%20pic.png?raw=true',
-    link: 'https://iron-forge-gym-nitansh.vercel.app/',
+    link: 'https://ironforge-gym.pages.dev/',
   },
   {
     title: 'Velvet Brew Café',
