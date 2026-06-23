@@ -85,7 +85,7 @@ const ContactSection = () => {
             </div>
             <h3 className="text-xl font-bold font-space mb-2">Email</h3>
             <p className="text-gray-400 mb-4">nitanshdubey7@gmail.com</p>
-            <p className="text-purple font-semibold">Deatiled Discussion</p>
+            <p className="text-purple font-semibold">Detailed Discussion</p>
           </motion.a>
         </div>
       </div>

@@ -126,7 +126,7 @@ const Process = () => {
           viewport={{ once: true }}
           className="mt-16 glass-effect p-8 rounded-xl border border-blue/20 text-center"
         >
-          <p className="text-lg text-gray-300 mb-4">📅 <span className="font-bold">Typical Timeline:</span> 4-6 weeks depending on project scope</p>
+          <p className="text-lg text-gray-300 mb-4">📅 <span className="font-bold">Typical Timeline:</span> 2-4 weeks depending on project scope</p>
           <p className="text-gray-400">Regular check-ins and updates throughout the entire process</p>
         </motion.div>
       </div>

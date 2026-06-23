@@ -24,10 +24,13 @@ const projects = [
   },
   {
     title: 'Elevate Personal Brand',
-    badge: 'Concept Project',
+    badge: 'Live Project',
     color: 'from-blue to-purple',
     description:
-      'A clean and professional personal portfolio built to establish authority and trust.',
+      'A clean and professional personal branding website designed to establish authority, build trust, and create a premium digital presence through elegant UI and modern web design.',
+    image:
+      'https://github.com/nitanshdubey/personal-brand/blob/main/meghna-r-4g0icUXh7FU-unsplash.jpg?raw=true',
+    link: 'https://personal-brand-4z4.pages.dev/',
   },
 ]
 
