@@ -61,7 +61,7 @@ const Process = () => {
   }
 
   return (
-    <section className="w-full py-20 px-4 md:px-8 bg-dark relative">
+    <section id="process" className="w-full py-20 px-4 md:px-8 bg-dark relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue opacity-5 rounded-full blur-3xl"></div>
       </div>

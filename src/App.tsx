@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Problem from './components/Problem'
 import Solution from './components/Solution'
@@ -44,6 +45,7 @@ function App() {
       transition={{ duration: 0.5 }}
       className="w-full bg-dark"
     >
+      <Navbar />
       <Hero />
       <Problem />
       <Solution />

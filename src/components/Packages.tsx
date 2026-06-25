@@ -9,11 +9,10 @@ const Packages = () => {
       period: 'Starting from',
       description: 'For new businesses needing a clean and professional online presence.',
       features: [
-        '5-7 Page Website',
+        '5-7 Sections Website',
         'Mobile Responsive Design',
         'Basic SEO Setup',
         'Contact Form',
-        '1 Month Support',
         'Fast Loading Speed',
       ],
       isHighlighted: false,
@@ -30,7 +29,6 @@ const Packages = () => {
         'Advanced SEO',
         'Lead Capture Forms',
         'Analytics Setup',
-        '3 Months Support',
         'Fast Performance',
         'Brand Integration',
       ],
@@ -48,7 +46,6 @@ const Packages = () => {
         'Custom Integrations',
         'E-commerce Ready',
         'Premium Support',
-        '6 Months Support',
         'Marketing Strategy',
         'Ongoing Optimization',
       ],
@@ -77,7 +74,7 @@ const Packages = () => {
   }
 
   return (
-    <section className="w-full py-20 px-4 md:px-8 bg-dark relative">
+    <section id="services" className="w-full py-20 px-4 md:px-8 bg-dark relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-purple opacity-5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue opacity-5 rounded-full blur-3xl"></div>
@@ -185,7 +182,7 @@ const Packages = () => {
           className="mt-16 text-center"
         >
           <p className="text-gray-400 text-lg">
-            All packages include <span className="text-blue font-semibold">premium support</span> and <span className="text-blue font-semibold">free revisions</span>
+            All packages include <span className="text-blue font-semibold">premium design</span> and <span className="text-blue font-semibold">free revisions</span>
           </p>
           <p className="text-gray-500 text-sm mt-2">Custom requirements? <a href="#contact" className="text-blue hover:underline">Let's talk</a></p>
         </motion.div>

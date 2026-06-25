@@ -3,7 +3,7 @@ import { Sparkles } from 'lucide-react'
 
 const About = () => {
   return (
-    <section className="w-full py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
+    <section id="about" className="w-full py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-0 top-20 w-96 h-96 bg-blue opacity-10 rounded-full blur-3xl"></div>
         <div className="absolute right-0 bottom-10 w-96 h-96 bg-purple opacity-10 rounded-full blur-3xl"></div>

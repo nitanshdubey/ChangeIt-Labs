@@ -23,7 +23,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="w-full min-h-screen bg-dark flex items-center justify-center pt-20 pb-20 px-4 md:px-8">
+    <section className="w-full min-h-screen bg-dark flex items-center justify-center pt-32 pb-20 px-4 md:px-8">
       {/* Background gradient effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-0 w-96 h-96 bg-blue opacity-5 rounded-full blur-3xl"></div>
@@ -58,7 +58,8 @@ const Hero = () => {
           className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-inter"
         >
            
-          We transform gyms, cafés, and local businesses into premium digital brands with modern websites designed to build trust, attract customers, and create lasting impressions.
+           We transform personal brands and businesses into premium digital experiences through thoughtfully designed websites that build customers, inspire trust, and drive meaningful growth.
+
         </motion.p>
 
         {/* CTA Buttons */}
