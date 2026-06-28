@@ -5,11 +5,12 @@ const Packages = () => {
   const packages = [
     {
       name: 'Foundation Website',
-      price: '₹5,000',
+      price: '₹4,999',
       period: 'Starting from',
       description: 'For new businesses needing a clean and professional online presence.',
       features: [
         '5-7 Sections Website',
+        'Your Business Theme',
         'Mobile Responsive Design',
         'Basic SEO Setup',
         'Contact Form',
@@ -20,7 +21,7 @@ const Packages = () => {
     },
     {
       name: 'Growth Website',
-      price: '₹15,000',
+      price: '₹11,999',
       period: 'Starting from',
       description: 'For businesses that want to stand out and convert visitors.',
       features: [
