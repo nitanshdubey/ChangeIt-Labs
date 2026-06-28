@@ -26,7 +26,7 @@ const Navbar = () => {
                 ChangeIt Labs
               </h2>
               <p className="text-xs text-gray-400">
-                Digital Brand Studio
+                Premium Digital Studio
               </p>
             </div>
           </a>

@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion'
-import { ArrowUpRight } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react'
+import { ArrowUpRight, ChevronDown, ChevronUp } from 'lucide-react'
 
 const projects = [
   {
@@ -33,8 +34,21 @@ const projects = [
     link: 'https://personal-brand-4z4.pages.dev/',
   },
 ]
+const hiddenProjects = [
+  {
+    title: 'Elite Dental Studio',
+    badge: 'Live Project',
+    color: 'from-cyan-500 to-blue-500',
+    description:
+      'A premium dentist brand website designed to build trust, showcase expertise, and create a luxury healthcare experience with modern UI and elegant storytelling.',
+    image:
+      'https://github.com/nitanshdubey/Dentist-Brand/blob/main/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg?raw=true',
+    link: 'https://dentist-brand.pages.dev/',
+  },
+]
 
 const Portfolio = () => {
+  const [showMore, setShowMore] = useState(false)
   return (
     <section
   id="portfolio"
@@ -150,10 +164,138 @@ const Portfolio = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+                </div>
+{/* Show More Button */}
+{!showMore && (
+  <div className="flex justify-center mt-12">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => setShowMore(true)}
+      className="flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-blue to-purple text-white font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+    >
+      <span>More Concept Projects</span>
+      <ChevronDown size={20} />
+    </motion.button>
+  </div>
+)}
+
+<AnimatePresence>
+  {showMore && (
+    <motion.div
+      initial={{ opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: "auto" }}
+      exit={{ opacity: 0, height: 0 }}
+      transition={{ duration: 0.5 }}
+      className="overflow-hidden mt-24 space-y-24"
+    >
+      {hiddenProjects.map((project) => (
+        <motion.div
+          key={project.title}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="grid lg:grid-cols-2 gap-14 items-center"
+        >
+          {/* Image */}
+          <div>
+            <div
+              className={`absolute hidden lg:block w-80 h-80 bg-gradient-to-br ${project.color} opacity-20 blur-3xl rounded-full`}
+            ></div>
+
+            <motion.div
+              whileHover={{ y: -8, rotate: -1 }}
+              className="relative mx-auto max-w-xl"
+            >
+              <div className="bg-zinc-900 border border-white/10 rounded-[28px] p-3 shadow-2xl">
+                <div className="flex justify-center mb-2">
+                  <div className="w-3 h-3 rounded-full bg-zinc-600"></div>
+                </div>
+
+                <div className="rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-slate-900 to-slate-800">
+                  <div className="h-10 border-b border-white/10 flex items-center gap-2 px-4">
+                    <span className="w-3 h-3 rounded-full bg-red-400"></span>
+                    <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
+                    <span className="w-3 h-3 rounded-full bg-green-400"></span>
+                  </div>
+
+                  <div className="p-4">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full rounded-xl border border-white/10 object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mx-10 h-3 bg-zinc-700 rounded-b-full"></div>
+            </motion.div>
+          </div>
+
+          {/* Content */}
+          <div>
+            <span
+              className={`inline-block bg-gradient-to-r ${project.color} px-4 py-2 rounded-full text-xs font-semibold uppercase mb-6`}
+            >
+              {project.badge}
+            </span>
+
+            <h3 className="text-3xl md:text-5xl font-space font-bold mb-6">
+              {project.title}
+            </h3>
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+              {project.description}
+            </p>
+
+            <div className="flex flex-wrap gap-3 mb-8">
+              {[
+                "Premium UI",
+                "Responsive",
+                "SEO Ready",
+                "Conversion Focused",
+              ].map((f) => (
+                <span
+                  key={f}
+                  className="glass-effect border border-white/10 rounded-full px-4 py-2 text-sm"
+                >
+                  {f}
+                </span>
+              ))}
+            </div>
+
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-cyan-600 hover:bg-cyan-700 px-7 py-4 rounded-xl font-semibold smooth-transition"
+            >
+              Visit Website
+              <ArrowUpRight size={20} />
+            </a>
+          </div>
+        </motion.div>
+      ))}
+
+      {/* Show Less Button */}
+      <div className="flex justify-center mt-12">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setShowMore(false)}
+          className="flex items-center gap-3 px-7 py-4 rounded-full bg-gradient-to-r from-blue to-purple text-white font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <span>Show Less</span>
+          <ChevronUp size={20} />
+        </motion.button>
       </div>
-    </section>
-  )
+    </motion.div>
+  )}
+</AnimatePresence>
+</div>
+</section>
+)
 }
 
 export default Portfolio

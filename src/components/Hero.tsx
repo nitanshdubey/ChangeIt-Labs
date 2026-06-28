@@ -39,7 +39,7 @@ const Hero = () => {
         {/* Badge */}
         <motion.div variants={itemVariants} className="mb-8 flex justify-center">
           <div className="inline-block glass-effect px-6 py-2 rounded-full border border-blue/20">
-            <p className="text-sm font-medium text-blue">🚀 Digital Brand Studio</p>
+            <p className="text-sm font-medium text-blue">🚀 Premium Digital Studio</p>
           </div>
         </motion.div>
 
